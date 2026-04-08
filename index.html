@@ -13,7 +13,6 @@
     <script>
         tailwind.config = {
             darkMode: ['class', '.dark-mode'],
-            darkMode: ['class', '.dark-mode'],
             theme: {
                 extend: {
                     colors: {
@@ -26,7 +25,7 @@
                         'apple-link-dark': '#424245',
                     },
                     fontFamily: {
-                        sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'sans-serif'],
+                        sans: ['SF Pro Display', 'Segoe UI', 'sans-serif'],
                     },
                     height: {
                         'hero': '650px',
@@ -48,7 +47,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="light-mode font-sans antialiased bg-apple-light-bg text-apple-gray">
+<body class="light-mode font-sans bg-apple-light-bg text-apple-gray">
 
     <!-- Header -->
     <header
@@ -86,10 +85,10 @@
                     <li><a href="support.html" class="nav-link text-xs opacity-80 hover:opacity-100">Support</a></li>
                     <li class="nav-item flex items-center gap-3">
                         <div id="battery-indicator"
-                            class="flex items-center gap-2 h-5 pr-1 text-black dark:text-white cursor-help"
+                            class="flex items-center mt-[7px] gap-2 h-5 pr-1 text-black dark:text-white cursor-help"
                             title="Scroll Progress">
                             <div
-                                class="w-[22px] h-[11px] border border-current rounded-[3px] p-[1px] relative opacity-80">
+                                class="w-[25px] h-[13px] border border-current rounded-[3px] p-[1px] relative opacity-80">
                                 <div id="battery-level"
                                     class="h-full w-0 rounded-[1px] transition-all duration-100 ease-linear">
                                 </div>
@@ -335,7 +334,7 @@
     <main>
         <!-- Hero 1: iPhone -->
         <section id="hero-iphone"
-            class="hero-section mt-[44px] h-hero flex flex-col items-center justify-start bg-cover bg-bottom bg-no-repeat relative overflow-hidden mb-3 pt-14 text-center">
+            class="hero-section px-3 mt-[44px] h-hero flex flex-col items-center justify-start bg-cover bg-bottom bg-no-repeat relative overflow-hidden mb-3 pt-14 text-center">
             <h1 class="text-6xl font-semibold tracking-tight mb-1.5 text-[#000]">iPhone</h1>
             <h2 class="text-3xl font-normal mb-4 text-[#000]">Meet the latest iPhone lineup.</h2>
             <div class="flex gap-5 justify-center items-center mt-3">
@@ -350,10 +349,10 @@
 
         <!-- Hero 2: MacBook Neo -->
         <section id="hero-macbook-neo"
-            class="hero-section h-hero flex flex-col items-center justify-start bg-cover bg-[center_30%] bg-no-repeat relative overflow-hidden mb-3 pt-8 text-center">
+            class="hero-section px-3 h-hero flex flex-col items-center justify-start bg-cover bg-[center_30%] bg-no-repeat relative overflow-hidden mb-3 pt-8 text-center">
             <h1 class="text-6xl font-semibold tracking-tight mb-1.5 text-apple-gray">MacBook Neo</h1>
             <h2 class="text-3xl font-normal mb-4 text-apple-gray">Amazing Mac. Surprising price.</h2>
-            <div class="flex gap-5 justify-center items-center mt-3">
+            <div class="flex gap-5 justify-center items-center mt-3 hidden sm:block">
                 <a href="mac.html"
                     class="bg-apple-blue hover:bg-apple-blue-hover text-white px-5 py-2.5 rounded-full font-semibold transition-colors duration-300">Learn
                     more</a>
@@ -470,7 +469,7 @@
 
         <!-- Apple TV+ Carousel -->
         <section class="py-5 pb-16">
-            <div class="swiper mySwiper h-carousel">
+            <div class="swiper mySwip h-carousel">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide rounded-[18px]">
                         <img class="w-full h-full object-cover brightness-95"
