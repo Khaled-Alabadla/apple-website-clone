@@ -1,0 +1,62 @@
+.dark-mode footer {
+  filter: invert(1) hue-rotate(180deg);
+  transition: filter 0.3s ease;
+}
+
+/* Support Page Specific Styles */
+.support-hero-h1 {
+    background: linear-gradient(135deg, #1d1d1f 30%, #434345 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark-mode .support-hero-h1 {
+    background: linear-gradient(135deg, #ffffff 30%, #a1a1a6 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.product-icon-container {
+    perspective: 1000px;
+}
+
+.product-icon-container img {
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.group:hover .product-icon-container img {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Card hover micro-animations */
+.support-topic-card {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Entry Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.entry-animation {
+    opacity: 0;
+    animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* Scroll progress indicator refinement */
+#battery-level {
+    transition: width 0.1s linear, background-color 0.3s ease;
+}
+
+.dark-mode #battery-level {
+    box-shadow: 0 0 10px rgba(48, 209, 88, 0.3);
+}
