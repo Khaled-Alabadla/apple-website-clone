@@ -1,0 +1,15 @@
+.main_container,.hero_container,.support_images,.hero_images,.div_hero_img,.hero_div,.search_div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.hero_div{
+    height:181px ;
+    background-color:#eeeded ; 
+    border-radius: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    
+             
+}
