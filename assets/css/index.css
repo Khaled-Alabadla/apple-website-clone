@@ -14,14 +14,14 @@
 }
 
 .swiper-slide {
-    width: 274px; /* Default for mobile */
+    width: 274px;
     max-width: 90%;
     transition: transform 0.3s ease;
 }
 
 @media (min-width: 768px) {
     .swiper-slide {
-        width: 1024px; /* Scale up for desktop */
+        width: 1024px;
     }
 }
 

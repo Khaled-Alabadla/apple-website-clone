@@ -1,16 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Swiper configuration
-    if (document.querySelector('.mySwiper')) {
-        const swiper = new Swiper(".mySwiper", {
+    if (document.querySelector('.mySwip')) {
+        const swiper = new Swiper(".mySwip", {
             slidesPerView: "auto",
             centeredSlides: true,
             spaceBetween: 20,
             loop: true,
             autoplay: {
                 delay: 4000,
-                disableOnInteraction: false,
             },
-            grabCursor: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
