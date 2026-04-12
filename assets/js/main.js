@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     themeToggleBtn.addEventListener('click', () => {
         if (body.classList.contains('light-mode')) {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
+            body.classList.replace('light-mode', 'dark-mode');
             localStorage.setItem('theme', 'dark-mode');
         } else {
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
+            body.classList.replace('dark-mode', 'light-mode');
             localStorage.setItem('theme', 'light-mode');
         }
     });
 
-    const megaMenu    = document.getElementById('mega-menu');
-    const menuItems   = document.querySelectorAll('[data-menu]');
-    const allPanels   = document.querySelectorAll('.menu-panel');
-    let hideTimer     = null;
+
+    // Mega Menu
+    const megaMenu = document.getElementById('mega-menu');
+    const menuItems = document.querySelectorAll('[data-menu]');
+    const allPanels = document.querySelectorAll('.menu-panel');
+    let hideTimer = null;
 
     function openMenu(id) {
         clearTimeout(hideTimer);

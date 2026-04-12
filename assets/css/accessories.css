@@ -1,11 +1,14 @@
 .dark-mode .dark,
-.dark-mode .swiper-slide img {
+.dark-mode .swiper-slide img,
+.dark-mode footer {
   filter: invert(1) hue-rotate(180deg);
   transition: filter 0.3s ease;
 }
+
 body {
   overflow-x: hidden;
 }
+
 .swiper {
   overflow: hidden !important;
 }
@@ -20,6 +23,7 @@ body {
 .swiper-pagination {
   bottom: -30px !important;
 }
+
 .custom-arrow {
   background-color: rgba(210, 210, 215, 0.5) !important;
   border-radius: 50% !important;
@@ -52,6 +56,7 @@ body {
 .swiper-button-next {
   right: 25px !important;
 }
+
 .swiper-button-prev {
   left: 15px !important;
 }
@@ -63,11 +68,13 @@ body {
     display: flex;
     margin-right: 0 !important;
   }
+
   .swiper-wrapper {
     width: 90%;
     margin: 0 auto;
     align-items: stretch;
   }
+
   .swiper-button-next {
     right: 40px !important;
   }

@@ -1,5 +1,6 @@
 .dark-mode .hero-section,
-.dark-mode .promo-section {
+.dark-mode .promo-section,
+.dark-mode footer {
     filter: invert(1) hue-rotate(180deg);
     transition: filter 0.3s ease;
 }
